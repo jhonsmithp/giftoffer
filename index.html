@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive US Offers & Rewards</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f7f6; margin: 0; padding: 20px; text-align: center; }
+    h1 { color: #333; }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+    .offer-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .offer-card:hover { transform: translateY(-5deg); }
+    .offer-card img { width: 80px; height: 80px; object-fit: contain; }
+    .offer-card h3 { font-size: 18px; color: #222; margin: 15px 0 10px; }
+    .btn {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .btn:hover { background: #218838; }
+  </style>
+</head>
+<body>
+
+  <h1>🎁 Choose Your Reward Below</h1>
+  <p>Select any offer and complete simple steps to claim!</p>
+
+  <div class="grid-container">
+    <!-- Offer 1 -->
+    <div class="offer-card">
+      <img src="amazon-logo.png" alt="Amazon">
+      <h3>$100 Amazon Gift Card</h3>
+      <a href="YOUR_AFFILIATE_LINK_1" class="btn">Claim Now</a>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="offer-card">
+      <img src="cashapp-logo.png" alt="Cash App">
+      <h3>$750 Cash App Transfer</h3>
+      <a href="YOUR_AFFILIATE_LINK_2" class="btn">Claim Now</a>
+    </div>
+
+    <!-- বাকি অফারগুলো এভাবে কপি করে ১০টি কার্ড তৈরি করা যাবে -->
+  </div>
+
+</body>
+</html>
