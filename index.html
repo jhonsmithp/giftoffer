@@ -3,61 +3,317 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive US Offers & Rewards</title>
+  <title>USA Official Rewards Hub | Exclusive Gift Cards & Offers</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f7f6; margin: 0; padding: 20px; text-align: center; }
-    h1 { color: #333; }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 30px auto;
+    /* Premium Modern Styling & Fast Loading */
+    :root {
+      --primary-color: #0d6efd;
+      --secondary-color: #198754;
+      --bg-color: #f4f7f9;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
     }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg-color); color: var(--text-main); display: flex; flex-direction: column; min-height: 100vh; }
+
+    /* Top Trust Bar & SSL */
+    .top-bar { background: #0f172a; color: #fff; text-align: center; padding: 8px 15px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; }
+    .top-bar span { color: #38bdf8; }
+
+    /* Header */
+    header { background: var(--card-bg); text-align: center; padding: 35px 20px 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
+    header h1 { font-size: 28px; color: #0f172a; margin-bottom: 10px; font-weight: 800; }
+    header p { font-size: 15px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.5; }
+    
+    .flag-badge { display: inline-flex; align-items: center; gap: 6px; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 12px; }
+
+    /* Offers Grid */
+    .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; }
+    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+
+    /* Card Design */
     .offer-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      background: var(--card-bg);
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify: space-between;
+      position: relative;
     }
-    .offer-card:hover { transform: translateY(-5deg); }
-    .offer-card img { width: 80px; height: 80px; object-fit: contain; }
-    .offer-card h3 { font-size: 18px; color: #222; margin: 15px 0 10px; }
+    .offer-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); border-color: #cbd5e1; }
+    
+    .icon-wrapper { width: 70px; height: 70px; border-radius: 50%; background: #f8fafc; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: 1px solid #f1f5f9; }
+    .icon-wrapper svg { width: 40px; height: 40px; }
+
+    .offer-title { font-size: 16px; font-weight: 700; color: var(--text-main); margin-bottom: 6px; }
+    .offer-tag { font-size: 12px; color: #059669; background: #ecfdf5; padding: 2px 8px; border-radius: 12px; font-weight: 600; margin-bottom: 18px; display: inline-block; }
+
     .btn {
-      display: inline-block;
-      background: #28a745;
-      color: #fff;
-      padding: 10px 20px;
+      width: 100%;
+      background: var(--secondary-color);
+      color: #ffffff;
+      padding: 12px 0;
       text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: background 0.2s;
+      box-shadow: 0 4px 6px rgba(25, 135, 84, 0.2);
     }
-    .btn:hover { background: #218838; }
+    .btn:hover { background: #157347; }
+
+    /* Footer & Legal */
+    footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 30px 20px; margin-top: 50px; font-size: 13px; line-height: 1.6; }
+    .footer-links { margin-bottom: 15px; }
+    .footer-links a { color: #cbd5e1; text-decoration: none; margin: 0 10px; font-weight: 500; }
+    .footer-links a:hover { color: #fff; text-decoration: underline; }
+    .ssl-badge { display: inline-flex; align-items: center; gap: 5px; color: #22c55e; font-size: 12px; font-weight: 600; margin-top: 10px; }
   </style>
 </head>
 <body>
 
-  <h1>🎁 Choose Your Reward Below</h1>
-  <p>Select any offer and complete simple steps to claim!</p>
-
-  <div class="grid-container">
-    <!-- Offer 1 -->
-    <div class="offer-card">
-      <img src="amazon-logo.png" alt="Amazon">
-      <h3>$100 Amazon Gift Card</h3>
-      <a href="YOUR_AFFILIATE_LINK_1" class="btn">Claim Now</a>
-    </div>
-
-    <!-- Offer 2 -->
-    <div class="offer-card">
-      <img src="cashapp-logo.png" alt="Cash App">
-      <h3>$750 Cash App Transfer</h3>
-      <a href="YOUR_AFFILIATE_LINK_2" class="btn">Claim Now</a>
-    </div>
-
-    <!-- বাকি অফারগুলো এভাবে কপি করে ১০টি কার্ড তৈরি করা যাবে -->
+  <!-- Top Trust Bar -->
+  <div class="top-bar">
+    🔒 <span>256-Bit SSL Encrypted</span> | Verified USA Rewards Hub
   </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="flag-badge">🇺🇸 Exclusive USA Offers</div>
+    <h1>Choose Your Reward Below</h1>
+    <p>Select any of the top verified US offers below, complete the required simple steps/surveys, and claim your instant reward!</p>
+  </header>
+
+  <!-- Offers Grid -->
+  <div class="container">
+    <div class="grid-container">
+
+      <!-- 1. Amazon -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#FF9900"><path d="M15.93 17.09c-2.7 1.95-6.61 2.97-10.01 1.05-.48-.27-1.04.18-.8.69 1.25 2.62 5.37 3.6 8.78 2.37 2.62-.95 5.09-3.26 5.09-3.26s.4-.44.07-.68c-.34-.23-.81.21-.81.21zM18.8 15.6c-.33-.43-2.18-.2-3.02-.1-.26.03-.3-.21-.07-.37.75-.52 2.38-.73 2.95-.14.57.59.39 2.23-.29 2.87-.21.2-.42.09-.33-.16.29-.8.1-1.67-.24-2.1zM13.2 10.9c0 1.28-.6 2.05-1.74 2.05-1.12 0-1.69-.87-1.69-2.05 0-1.29.67-2.07 1.73-2.07 1.08 0 1.7.83 1.7 2.07zm3.17 2.85c-.23.19-.55.22-.8.05-.46-.32-.78-.85-.98-1.42-1.02 1.24-2.3 1.62-3.72 1.62-2.18 0-3.79-1.42-3.79-3.9 0-2.67 1.83-4.13 4.22-4.13 1.21 0 2.27.31 3.01.89V5.6c0-.82-.54-1.2-1.55-1.2-1.01 0-2.11.39-2.88.88-.23.15-.49.03-.58-.22l-.37-1.03c-.09-.25.01-.48.24-.63C9.72 2.84 11.45 2.4 13.15 2.4c2.58 0 4.22 1.13 4.22 3.44v5.37c0 1.16.48 1.68.96 2.32.17.23.12.52-.11.71l-1.85 1.51z"/></svg>
+        </div>
+        <div class="offer-title">$100 Amazon Gift Card</div>
+        <div class="offer-tag">Fast Claim • Free</div>
+        <a href="YOUR_AFFILIATE_LINK_1" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 2. Cash App -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#00D632"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 14.09v1.41h-2.82v-1.41c-1.57-.31-2.82-1.43-2.92-3.09h2.12c.11.66.69 1.19 1.48 1.19.88 0 1.48-.53 1.48-1.19 0-.74-.51-1.13-1.84-1.46-1.74-.43-3.08-1.04-3.08-2.93 0-1.54 1.18-2.65 2.76-2.96V6h2.82v1.41c1.39.29 2.45 1.34 2.62 2.81h-2.1c-.13-.53-.61-.96-1.32-.96-.75 0-1.31.42-1.31 1.05 0 .66.42.99 1.76 1.33 1.93.49 3.16 1.15 3.16 3.05 0 1.67-1.28 2.83-2.86 3.4z"/></svg>
+        </div>
+        <div class="offer-title">$750 Cash App Transfer</div>
+        <div class="offer-tag">Direct Transfer</div>
+        <a href="YOUR_AFFILIATE_LINK_2" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 3. PayPal -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#003087"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.72a.761.761 0 0 1 .752-.641h6.643c2.617 0 4.673.559 5.867 1.62 1.127 1.002 1.503 2.45 1.117 4.312-.524 2.528-2.072 4.135-4.225 4.908-1.02.366-2.282.522-3.754.522H8.816l-.887 5.617a.641.641 0 0 1-.633.541z"/></svg>
+        </div>
+        <div class="offer-title">$500 PayPal Cash</div>
+        <div class="offer-tag">Instant Payout</div>
+        <a href="YOUR_AFFILIATE_LINK_3" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 4. Google Play -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#EA4335"><path d="M3.6 2.27L13.7 12 3.6 21.73c-.36-.33-.6-.82-.6-1.38V3.65c0-.56.24-1.05.6-1.38zm11.52 8.31l2.45-1.42c.81-.47.81-1.23 0-1.7L15.12 6.04l-2.84 2.84 2.84 1.7zm-2.84 2.84l2.84 1.7 2.45-1.42c.81-.47.81-1.23 0-1.7l-2.45-1.42-2.84 2.84zm-1.42-1.42L3.6 2.27l8.68 8.68-1.42 1.03z"/></svg>
+        </div>
+        <div class="offer-title">$100 Google Play Code</div>
+        <div class="offer-tag">Digital Code</div>
+        <a href="YOUR_AFFILIATE_LINK_4" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 5. Apple -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#000000"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.2c.63-.78 1.07-1.85.95-2.92-.92.04-2.07.62-2.73 1.39-.59.68-1.1 1.78-.96 2.83 1.04.08 2.11-.52 2.74-1.3z"/></svg>
+        </div>
+        <div class="offer-title">$100 Apple Store Card</div>
+        <div class="offer-tag">iOS / Store</div>
+        <a href="YOUR_AFFILIATE_LINK_5" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 6. Walmart -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#0071CE"><path d="M12 2l1.8 4.9 5.2-1.4-2.3 4.7 4.7 2.3-5 1.7 1.7 5-4.8-2.2L12 22l-1.3-4.9-4.8 2.2 1.7-5-5-1.7 4.7-2.3-2.3-4.7 5.2 1.4L12 2z"/></svg>
+        </div>
+        <div class="offer-title">$500 Walmart Shopping</div>
+        <div class="offer-tag">US In-Store/Online</div>
+        <a href="YOUR_AFFILIATE_LINK_6" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 7. SHEIN -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#000000"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8l6.8 3.4L12 11.6 5.2 8.2 12 4.8zM4 15.5V9.4l7 3.5v6.1l-7-3.5zm16 0l-7 3.5v-6.1l7-3.5v6.1z"/></svg>
+        </div>
+        <div class="offer-title">$750 Shein Gift Card</div>
+        <div class="offer-tag">Fashion Voucher</div>
+        <a href="YOUR_AFFILIATE_LINK_7" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 8. Roblox -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#E2231A"><path d="M5.16 3L3 18.84 18.84 21 21 5.16 5.16 3zm8.34 10.34l-3-1 1-3 3 1-1 3z"/></svg>
+        </div>
+        <div class="offer-title">10,000 Robux Card</div>
+        <div class="offer-tag">Gaming Code</div>
+        <a href="YOUR_AFFILIATE_LINK_8" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 9. PlayStation -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#003791"><path d="M8.58 16.3c.76.17 1.57.21 2.3.09 1.94-.3 3.12-1.57 3.12-3.13 0-1.84-1.29-2.8-3.08-3.18l-1.92-.41V6.65l3.28.76v2.33l2.25.53V5.5L8.58 4.2v12.1zm-4.1-1.34c0 1.9 1.48 3.13 3.65 3.13 1.05 0 2.08-.28 2.88-.82l-1.2-1.88c-.5.33-1.09.5-1.68.5-.9 0-1.42-.48-1.42-1.25 0-.74.45-1.22 1.35-1.48l1.95-.56v-2.1l-2.06.59c-2.02.58-3.47 1.83-3.47 3.87z"/></svg>
+        </div>
+        <div class="offer-title">$100 PSN Store Code</div>
+        <div class="offer-tag">Gaming Credit</div>
+        <a href="YOUR_AFFILIATE_LINK_9" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 10. Xbox -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#107C41"><path d="M4.66 4.66C7.03 2.97 9.9 2 12 2s4.97.97 7.34 2.66c.27.19.16.59-.17.65-2.06.39-4.82 1.76-7.17 5.1-2.35-3.34-5.11-4.71-7.17-5.1-.33-.06-.44-.46-.17-.65zM2 12c0 2.1.97 4.97 2.66 7.34.19.27.59.16.65-.17.39-2.06 1.76-4.82 5.1-7.17C7.07 9.65 5.7 6.89 5.31 4.83c-.06-.33-.46-.44-.65-.17C2.97 7.03 2 9.9 2 12zm17.34 7.34C21.03 16.97 22 14.1 22 12c0-2.1-.97-4.97-2.66-7.34-.19-.27-.59-.16-.65.17-.39 2.06-1.76 4.82-5.1 7.17 3.34 2.35 4.71 5.11 5.1 7.17.06.33.46.44.65.17zM12 22c2.1 0 4.97-.97 7.34-2.66.27-.19.16-.59-.17-.65-2.06-.39-4.82-1.76-7.17-5.1-2.35 3.34-5.11 4.71-7.17 5.1-.33.06-.44.46-.17.65C7.03 21.03 9.9 22 12 22z"/></svg>
+        </div>
+        <div class="offer-title">$100 Xbox Game Pass</div>
+        <div class="offer-tag">Digital Code</div>
+        <a href="YOUR_AFFILIATE_LINK_10" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 11. Target -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#CC0000"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        </div>
+        <div class="offer-title">$500 Target Gift Card</div>
+        <div class="offer-tag">Shopping Pass</div>
+        <a href="YOUR_AFFILIATE_LINK_11" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 12. Netflix -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#E50914"><path d="M5.398 0v24h4.153V12.923L14.73 24h4.154V0h-4.154v11.077L9.55 0z"/></svg>
+        </div>
+        <div class="offer-title">1-Year Netflix Subscription</div>
+        <div class="offer-tag">Entertainment</div>
+        <a href="YOUR_AFFILIATE_LINK_12" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 13. Steam -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#171a21"><path d="M12 2A10 10 0 0 0 2 12c0 4.75 3.31 8.72 7.77 9.74l2.42-3.33a3.5 3.5 0 0 1-1.69-3.21c0-.28.04-.55.11-.81L7.33 12.3A3.5 3.5 0 0 1 4 9a3.5 3.5 0 0 1 7 0c0 .32-.05.63-.13.92l3.21 2.05a3.5 3.5 0 1 1 2.92 5.03l-3.32 2.41A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+        </div>
+        <div class="offer-title">$100 Steam Wallet Code</div>
+        <div class="offer-tag">PC Games</div>
+        <a href="YOUR_AFFILIATE_LINK_13" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 14. eBay -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#E53238"><path d="M5.2 13.5c-.8 0-1.4-.6-1.4-1.5s.6-1.5 1.4-1.5 1.4.6 1.4 1.5-.6 1.5-1.4 1.5zm6.1 0c-.8 0-1.4-.6-1.4-1.5s.6-1.5 1.4-1.5 1.4.6 1.4 1.5-.6 1.5-1.4 1.5zm6.1 0c-.8 0-1.4-.6-1.4-1.5s.6-1.5 1.4-1.5 1.4.6 1.4 1.5-.6 1.5-1.4 1.5zM12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        </div>
+        <div class="offer-title">$250 eBay Gift Card</div>
+        <div class="offer-tag">Online Deals</div>
+        <a href="YOUR_AFFILIATE_LINK_14" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 15. Starbucks -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#00704A"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+        </div>
+        <div class="offer-title">$100 Starbucks Card</div>
+        <div class="offer-tag">Coffee Reward</div>
+        <a href="YOUR_AFFILIATE_LINK_15" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 16. DoorDash -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#FF3008"><path d="M23.072 8.163c-.352-.48-1.025-.688-1.583-.497L2.831 13.911c-.558.192-.916.736-.88 1.328.036.592.464 1.072 1.04 1.168l5.296.88 2.224 5.344c.224.544.752.896 1.344.896.08 0 .16 0 .24-.016.632-.08 1.136-.56 1.256-1.184l3.128-13.824c.096-.432-.048-.88-.384-1.144z"/></svg>
+        </div>
+        <div class="offer-title">$200 DoorDash Food Credit</div>
+        <div class="offer-tag">Food Delivery</div>
+        <a href="YOUR_AFFILIATE_LINK_16" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 17. Uber Eats -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#06C167"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        </div>
+        <div class="offer-title">$150 Uber Eats Voucher</div>
+        <div class="offer-tag">US Dining</div>
+        <a href="YOUR_AFFILIATE_LINK_17" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 18. Nike -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#000000"><path d="M21.71 6.33c-.55-.26-1.22-.09-1.57.39l-9.15 12.33-4.54-4.54c-.42-.42-1.1-.42-1.52 0s-.42 1.1 0 1.52l5.3 5.3c.21.21.49.31.76.31.28 0 .55-.11.76-.32l9.96-13.43c.35-.48.24-1.15-.3-1.56z"/></svg>
+        </div>
+        <div class="offer-title">$300 Nike Gift Card</div>
+        <div class="offer-tag">Sports & Gear</div>
+        <a href="YOUR_AFFILIATE_LINK_18" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 19. Visa -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#1A1F71"><path d="M9.2 16.5l1.4-8.8h2.3l-1.4 8.8H9.2zm6.7-8.6c-.5-.2-1.2-.4-2.1-.4-2.3 0-3.9 1.2-3.9 2.9 0 1.3 1.1 2 2 2.4.9.4 1.2.7 1.2 1.1 0 .6-.7.9-1.4.9-.9 0-1.5-.1-2.2-.4l-.3-.1-.3 1.9c.5.2 1.5.4 2.5.4 2.4 0 4-1.2 4-3 0-1-.6-1.8-2-2.3-.8-.4-1.3-.7-1.3-1.1 0-.4.4-.8 1.3-.8.7 0 1.3.1 1.8.3l.2.1.3-1.8zM21.5 7.7h-1.8c-.6 0-1 .2-1.2.7l-3.4 8.1h2.4l.5-1.3h2.9l.3 1.3h2.1l-1.8-8.8zm-2.5 5.7l1.2-3.2.7 3.2h-1.9zM7 7.7L4.7 13.7l-.2-1.2c-.4-1.4-1.6-2.9-3-3.6l1.9 7.6h2.4l3.6-8.8H7z"/></svg>
+        </div>
+        <div class="offer-title">$1,000 Visa Gift Card</div>
+        <div class="offer-tag">Prepaid Balance</div>
+        <a href="YOUR_AFFILIATE_LINK_19" class="btn">Claim Reward</a>
+      </div>
+
+      <!-- 20. Best Buy -->
+      <div class="offer-card">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="#003B64"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm1 14h-2v-2h2v2zm0-4h-2V8h2v4z"/></svg>
+        </div>
+        <div class="offer-title">$500 Best Buy Card</div>
+        <div class="offer-tag">Electronics</div>
+        <a href="YOUR_AFFILIATE_LINK_20" class="btn">Claim Reward</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer with Legal & Terms -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms & Conditions</a> | 
+      <a href="#">Contact Us</a> | 
+      <a href="#">Disclaimer</a>
+    </div>
+    <p>&copy; 2026 USA Rewards Center. All Rights Reserved.</p>
+    <p style="font-size: 11px; margin-top: 8px; color: #64748b;">
+      Trade names or trademarks mentioned on this site are the property of their respective owners and are not affiliated with this website.
+    </p>
+    <div class="ssl-badge">
+      🔒 Protected by 256-Bit SSL Encryption
+    </div>
+  </footer>
 
 </body>
 </html>
